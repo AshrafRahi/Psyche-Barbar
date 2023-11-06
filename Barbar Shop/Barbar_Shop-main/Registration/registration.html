@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+        <!-- bootstrap-stylesheet -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+<style>
+
+    .head{
+        /* background-color: gainsboro; */
+        text-align: center; 
+        width: 100%;
+        margin-top: 20px;
+        height:100px;
+        background-image: url(RegistrationHeader.png);
+
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    h2{
+        color: teal;
+    }
+    h1{
+        color:sienna;
+    }
+    .section{
+       
+        display: flex;
+    }
+
+    div{
+        width: 50%;
+    }
+    div>img{
+        width: 90%;
+        height: 70%;
+        margin-top: 100px;
+        margin-left: 10px;
+    }
+
+
+.first-name-field{
+    width: 45%;
+    height: 20px;
+    margin-top: 40px;
+    padding-left: 15px;
+}
+.email-field{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width:50%;
+    margin-left: 33px;
+    height: 20px;
+    padding-left: 10px;
+
+}
+.pass-field{
+    margin-bottom: 10px;
+    width: 50%;
+    margin-left: 10px;
+    height: 20px;
+    padding-left: 10px;
+
+}
+.confirm-pass-field{
+    margin-bottom: 10px;
+    width: 50%;
+    margin-left: 25px;
+    height: 20px;
+    padding-left: 10px;
+    
+}
+.dob{
+    margin-top: 10px;
+    width: 45%;
+    height: 20px;
+    margin-left: 39px;
+    margin-bottom: 10px;
+}
+.select{
+    width: 27%;
+    margin-left: 18px;
+    height: 25px;
+}
+.gender{
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+.info-div{
+    margin-top: 15px;
+    background-color: #009688;
+    height: 700px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.img-div{
+    background-color: aliceblue;
+    height: 606x;
+    margin-top: 15px;
+}
+
+.submit-btn{
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    padding: 10px 35px;
+    font-size: 15px;
+    border-radius: 10px;
+    color:white;
+    background-color:sandybrown;
+}
+
+.login-btn{
+    /* margin-left: 10px; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    color:white;
+    background-color:sandybrown;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+.text{
+    font-style: italic;
+    font-size:medium;
+}
+
+</style>
+
+</head>
+<body>
+    
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">𝕭𝖆𝖗𝖇𝖆𝖗✂️</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../homepage.html">Home</a>
+          </li>
+         
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Others
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" target="_blank" href="../Pages/features.html">Features</a></li>
+              <li><a class="dropdown-item" target="_blank" href="../Pages/services.html">services</a></li>
+              <li><a class="dropdown-item" target="_blank" href="../Pages/Testimonials.html">Testimonials</a></li>
+              
+              <li><a class="dropdown-item" target="_blank" href="../Pages/somethong.html">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+   <div class="head">
+    <h1>Welcome to our Website</h1>
+    <h2>Create an Account</h2>
+   </div>
+
+     <form action="">
+    
+       
+        <section class="section">
+
+            <div class="img-div">
+               <img src="registration.png" alt="">
+            </div>
+
+
+       <div class="info-div">
+       
+        <label for="" class="text">Enter your First Name:<input type="text" name="" id="firstNameField" class="first-name-field" placeholder="First Name "></label>
+        <label for="" class="text">Enter your Last Name:<input type="text" name="" id="lasttNameField" class="first-name-field" placeholder="Last Name "></label>
+        <br>
+        <label for="" class="text">Enter your Email:<input type="email" name="" id="emailField" class="email-field" placeholder="Email ID"></label>
+        <br>
+         <span id="femail"></span>
+        <br>
+       
+        <label for="" class="text">Enter your password:<input type="password" name="" id="passField" class="pass-field" placeholder="Password"></label>
+       <br>
+        <span id="pass"></span>
+        <br>
+        <label for="" class="text">Confirm password:<input type="password" name="" id="confirmPassField" class="confirm-pass-field"placeholder="Confirm Password"></label>
+        <br>
+          <label for="" class="text">Enter your DOB:<input type="date" name="" id="dobField" class="dob" placeholder="Date of Birth"></label>
+          <br>
+        <label for="" class="country-list text">Enter your country:</label>
+
+        <select name="" id="Selection" class="select">
+            <option value="country">Bangladesh</option>
+            <option value="country">Pakistan</option>
+            <option value="country">USA</option>
+            <option value="country">Canada</option>
+            <option value="country">UK</option>
+            <option value="country">Japan</option>
+            <option value="country">Turkey</option>
+        </select>
+        <br>
+
+        <label for="male"><input type="radio" name="gender" id="male" class="gender">Male</label>
+        <label for="female"><input type="radio" name="gender" id="female">Female</label>
+
+        <br>
+
+        <textarea name="" id="textArea" cols="70" rows="10" placeholder="Tell us something about yourself"></textarea>
+         <br>
+
+         <label for=""><input type="checkbox" name="" id="checkBox">Accept all term and condition</label>
+         <ul>
+            <li><p>If you have already an account please press login.</p></li>
+         </ul>
+
+        <div class="btn">
+            <button class="submit-btn" id="registerBtn">Register</button>
+            <button class="login-btn"><a target="_blank" href="../Login/login.html" class="login-btn">login</a>
+            </button>
+        </div>
+
+       </div>
+        </section>
+
+
+     </form>
+
+     <script src="regex.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

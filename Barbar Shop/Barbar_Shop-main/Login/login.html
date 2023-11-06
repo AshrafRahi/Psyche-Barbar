@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login Page</title>
+        <!-- bootstrap-stylesheet -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+
+    <style>
+
+       body{
+       
+
+        background-image: url(login.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+
+        .form{
+            width: 60%;
+           margin: auto;
+           height: 300px;
+           background-color:#009688;
+           box-shadow: 10px 10px 20px gray;
+         }
+
+        h1{
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 50px;
+            }
+
+        .login{
+            color:lightcoral;
+        }
+
+.email-field{
+     margin-bottom: 5px;
+     width: 50%;
+     margin-left: 12px;
+     height: 30px;
+     padding-left: 80px;
+     margin-top: 30px;
+     border-radius: 5px;
+     
+}
+
+.password-field{
+    width: 50%;
+     margin-left: 12px;
+     height: 30px;
+     margin-top: 10px;
+     padding-left: 60px;
+     border-radius: 5px;
+
+}
+.field{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+    padding-left: 20px;
+}
+ 
+.submit-btn{
+    margin-left:100px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    padding: 10px 35px;
+    font-size: 15px;
+    border-radius: 10px;
+    color:white;
+    background-color:rgb(138, 138, 222);
+}
+
+.Register-btn{
+    margin-left:10px;
+    margin-top: 30px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    padding: 10px 30px;
+    font-size: 15px;
+    border-radius: 10px;
+    color:white;
+    background-color:rgb(138, 138, 222);
+    float: right;
+}
+.register{
+    color: white;
+}
+
+.footer{
+    display: flex;
+    justify-content:space-around;
+}
+        
+    </style>
+</head>
+<body>
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">𝕭𝖆𝖗𝖇𝖆𝖗✂️</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../homepage.html">Home</a>
+          </li>
+         
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Others
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" target="_blank" href="../Pages/features.html">Features</a></li>
+              <li><a class="dropdown-item" target="_blank" href="../Pages/services.html">services</a></li>
+              <li><a class="dropdown-item" target="_blank" href="../Pages/Testimonials.html">Testimonials</a></li>
+              
+              <li><a class="dropdown-item" target="_blank" href="../Pages/somethong.html">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+    
+    <h1>Please <span class="login">login</span></h1>
+
+    <form action="" >
+
+        <div class="form">
+            <label for="" class="field">Enter your Email: <input type="email" name="" id="" placeholder="Email"class="email-field" required></label>
+     <br>
+     <label for="" class="field">Enter your Password: <input type="password" name="" id="" placeholder="Password" class="password-field" required></label>
+     <br>
+     <button type="submit" class="submit-btn"><a href="" target="_blank"  class="register">Submit</a></button>
+     <button type="submit" class="Register-btn"><a href="../Registration/registration.html" target="_blank"  class="register">Register</a></button>
+
+     <br>
+     
+     <div class="footer">
+
+        <label for=""><input type="checkbox" name="" id="" class="Remembercheckbox">Remember Me</label>
+     <a href="" >forget password</a>
+     </div>
+
+        </div>
+    
+
+
+
+
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
